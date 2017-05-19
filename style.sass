@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+*
+  box-sizing: border-box
+
+=height-margin($min-height: 345px,  $margin-top: 0, $margin-bottom: 0)
+  min-height: $min-height
+  margin-top: $margin-top
+  margin-bottom: $margin-bottom
+$main-font: 'Open Sans', sans-serif
+
+.container
+  border: solid 2px transparent
+  max-width: 1170px
+  margin: 0 auto
+
+body
+  margin: 0 auto
+a
+  text-decoration: none
+p
+  font-size: 14px
+  line-height: 24px
+  color: #959595
+  font-weight: 400
+  font-family: $main-font
+h1
+  font-size: 60px
+  margin: 0
+  font-weight: 300
+  font-family: $main-font
+  
+h2
+  font-weight: 300
+  line-height: 24px
+  font-size: 35px
+  color: #222626
+  font-family: $main-font
+h3
+  font-size: 30px
+  font-weight: 300
+  font-family: $main-font
+h4
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  font-family: $main-font
+  color: #ffffff
+h5
+  font-size: 13px
+  font-weight: 600
+  line-height: 24px
+  font-family: $main-font
+  color: #67676d
+h6
+  font-size: 12px
+  font-weight: 600
+  font-family: $main-font
+  color: #b8b8b8
+
+ 
+section 
+  .flex-container
+    @extend .container
+
+.flex-container
+  @extend .container
+ 
+.row
+  display: flex
+  flex-wrap: wrap
+/*--======jumbotron======*/
+.jumbotron
+  background-image: url("http://i.imgur.com/pwKamIQ.jpg")
+  background-size: cover
+  background-position: 61%
+  .flex-container
+    +height-margin(951px)
+    position: relative
+    .phone
+      top: 261px
+      right: -60px
+      position: absolute
+      max-width: 727px
+      max-height: 948px
+    img
+      max-width: 100%
+      height: auto
+    .perfect
+      max-width: 438px
+      max-height: 154px
+      margin-top: 449px
+      h1
+        color: #fff
+      p
+        color: #fff
+
+/*--======end jumbotron======*/
+
+/*--======start======--*/
+.start.flex-container
+  +height-margin(345px, 113px, 83px)
+  .row
+    .box
+      flex: 1
+    .first.box
+      padding-right: 31px
+    .second.box
+      padding-top: 113px
+/*!--======end start======*/
+
+/*--======gallery======--*/
+=element ($background: #f5989d, $flex: 1)
+  background: $background
+  flex: $flex
+$full-cover: cover
+.left-right-padding
+  padding-left: 30px
+  padding-right: 10px
+.gallery
+  .flex-container
+    +height-margin(556px)
+    max-width: 100%
+    .row
+      height: 268px
+      .element,
+      .component
+        color: #fff
+        p
+          font-size: 13px
+          color: #fff
+          @extend .left-right-padding
+        h3
+          line-height: 24px
+          @extend .left-right-padding
+        h4
+          @extend .left-right-padding
+      .element.design
+        +element
+      .element.built
+        +element(#615f7d)
+      .element.clients
+        +element(#bd8cbf)
+      .element.great
+        +element(url("https://images.pexels.com/photos/30359/pexels-photo-30359.jpg?h=278&auto=compress&cs=tinysrgb"), 1)
+        background-size: $full-cover
+      .component.sign
+        +element(url("https://images.pexels.com/photos/34511/norway-mountain-sky-blue.jpg?h=278&auto=compress&cs=tinysrgb"), 2)
+        background-size: $full-cover
+      .component.pictures
+        +element(#82ca9c, 1)
+      .component.start
+        +element(url("https://images.pexels.com/photos/54566/pexels-photo-54566.jpeg?h=278&auto=compress&cs=tinysrgb"), 1)
+        background-size: $full-cover
+ 
+    
+/*--======end gallery======--*/
+
+
+/*--======details======--*/
+.details.flex-container
+  +height-margin(270px, 97px, 159px)
+  h2
+    margin-top: 0
+  .row
+    p
+      margin: 0
+    .col.padding
+      margin-right: 31px
+      flex: 1
+    .col
+      flex: 1
+  
+/*--======end details======--*/
+
+/*--======image======--*/
+.image
+  background-image: url("https://images.unsplash.com/photo-1454047637795-79e3325dfa0e?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=874&amp;q=60&amp;cs=tinysrgb&amp;crop=&amp;bg=")
+  background-size: $full-cover
+  background-position: center
+  .text
+    width: 550px
+    color: #fff
+    margin-top: 454px
+    p
+      color: #fff
+  .flex-container
+    +height-margin(874px)
+  
+/*--======end image======--*/
+
+/*======reasons======--*/
+.reasons
+  background-color: #82ca9c
+  .flex-container
+    +height-margin(536px)
+    p, h2, h5
+      color: #fff
+    h2
+      margin-top: 125px
+    .three
+      margin-right: 31px
+      flex: 1
+    .three.last
+      flex: 1
+      
+    
+/*--======end reasons======--*/
+
+/*--======buy======--*/
+.buy
+  background-color: #f6f7fa
+  .flex-container
+    +height-margin(627px)
+    .buying
+      flex: 1
+      height: 380px
+      margin-top: 103px
+      padding-left: 63px
+      padding-right: 94px
+      h3
+        margin-bottom: 0
+      .icons
+        color: #c5c5c5
+        margin-top: 19px
+      .btn-buy 
+        width: 151px
+        height: 46px
+        border-radius: 3px
+        background-color: #82ca9c
+        font-size: 13px
+        font-weight: 700
+        line-height: 22px
+        text-transform: uppercase
+        color: #fff
+        
+      .btn-popular
+        height: 24px
+        border-radius: 5px
+        background-color: #bd8cbf
+        font-size: 11px
+        font-weight: 700
+        line-height: 22px
+        text-transform: uppercase
+        color: #fff
+        margin-top: 47px
+        
+      .btn-legacy
+        width: 77px
+        height: 24px
+        border-radius: 5px
+        background-color: #e1e1e1
+        font-family: "Open Sans"
+        font-size: 11px
+        font-weight: 700
+        line-height: 22px
+        text-transform: uppercase
+        color: #fff
+        margin-top: 47px
+    .buying.white
+      box-shadow: 0 0 62px rgba(0, 0, 0, 0.05)
+      background-color: #ffffff
+/*======end buy======*/
+
+/*======footer======*/
+$footer-color: #f6f7fa
+
+footer
+  background-color: #192431
+  .flex-container
+    +height-margin(608px)
+    .row.contact
+      margin-top: 130px
+    .row.foot
+      margin-bottom: 157px
+    [class*="in-touch"]
+      flex: 1
+      h5,
+      p
+        color: $footer-color
+    .resources,
+    .features,
+    .how,
+      flex: 1
+      h6
+        font-weight: 400
+        line-height: 24px
+        font-size: 13px
+        color: $footer-color
+        margin: 0
+      h5
+        color: $footer-color
+    .empty
+      flex: 3
+
+/*======end footer======*/

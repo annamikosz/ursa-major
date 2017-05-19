@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  box-sizing: border-box; }
+
+.container, section .flex-container, .flex-container {
+  border: solid 2px transparent;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+body {
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #959595;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif; }
+
+h2 {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 35px;
+  color: #222626;
+  font-family: "Open Sans", sans-serif; }
+
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif; }
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff; }
+
+h5 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #67676d; }
+
+h6 {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #b8b8b8; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+/*--======jumbotron====== */
+.jumbotron {
+  background-image: url("http://i.imgur.com/pwKamIQ.jpg");
+  background-size: cover;
+  background-position: 61%; }
+  .jumbotron .flex-container {
+    min-height: 951px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative; }
+    .jumbotron .flex-container .phone {
+      top: 261px;
+      right: -60px;
+      position: absolute;
+      max-width: 727px;
+      max-height: 948px; }
+    .jumbotron .flex-container img {
+      max-width: 100%;
+      height: auto; }
+    .jumbotron .flex-container .perfect {
+      max-width: 438px;
+      max-height: 154px;
+      margin-top: 449px; }
+      .jumbotron .flex-container .perfect h1 {
+        color: #fff; }
+      .jumbotron .flex-container .perfect p {
+        color: #fff; }
+
+/*--======end jumbotron====== */
+/*--======start======-- */
+.start.flex-container {
+  min-height: 345px;
+  margin-top: 113px;
+  margin-bottom: 83px; }
+  .start.flex-container .row .box {
+    flex: 1; }
+  .start.flex-container .row .first.box {
+    padding-right: 31px; }
+  .start.flex-container .row .second.box {
+    padding-top: 113px; }
+
+/*!--======end start====== */
+/*--======gallery======-- */
+.left-right-padding, .gallery .flex-container .row .element p,
+.gallery .flex-container .row .component p, .gallery .flex-container .row .element h3,
+.gallery .flex-container .row .component h3, .gallery .flex-container .row .element h4,
+.gallery .flex-container .row .component h4 {
+  padding-left: 30px;
+  padding-right: 10px; }
+
+.gallery .flex-container {
+  min-height: 556px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%; }
+  .gallery .flex-container .row {
+    height: 268px; }
+    .gallery .flex-container .row .element,
+    .gallery .flex-container .row .component {
+      color: #fff; }
+      .gallery .flex-container .row .element p,
+      .gallery .flex-container .row .component p {
+        font-size: 13px;
+        color: #fff; }
+      .gallery .flex-container .row .element h3,
+      .gallery .flex-container .row .component h3 {
+        line-height: 24px; }
+    .gallery .flex-container .row .element.design {
+      background: #f5989d;
+      flex: 1; }
+    .gallery .flex-container .row .element.built {
+      background: #615f7d;
+      flex: 1; }
+    .gallery .flex-container .row .element.clients {
+      background: #bd8cbf;
+      flex: 1; }
+    .gallery .flex-container .row .element.great {
+      background: url("https://images.pexels.com/photos/30359/pexels-photo-30359.jpg?h=278&auto=compress&cs=tinysrgb");
+      flex: 1;
+      background-size: cover; }
+    .gallery .flex-container .row .component.sign {
+      background: url("https://images.pexels.com/photos/34511/norway-mountain-sky-blue.jpg?h=278&auto=compress&cs=tinysrgb");
+      flex: 2;
+      background-size: cover; }
+    .gallery .flex-container .row .component.pictures {
+      background: #82ca9c;
+      flex: 1; }
+    .gallery .flex-container .row .component.start {
+      background: url("https://images.pexels.com/photos/54566/pexels-photo-54566.jpeg?h=278&auto=compress&cs=tinysrgb");
+      flex: 1;
+      background-size: cover; }
+
+/*--======end gallery======-- */
+/*--======details======-- */
+.details.flex-container {
+  min-height: 270px;
+  margin-top: 97px;
+  margin-bottom: 159px; }
+  .details.flex-container h2 {
+    margin-top: 0; }
+  .details.flex-container .row p {
+    margin: 0; }
+  .details.flex-container .row .col.padding {
+    margin-right: 31px;
+    flex: 1; }
+  .details.flex-container .row .col {
+    flex: 1; }
+
+/*--======end details======-- */
+/*--======image======-- */
+.image {
+  background-image: url("https://images.unsplash.com/photo-1454047637795-79e3325dfa0e?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=874&amp;q=60&amp;cs=tinysrgb&amp;crop=&amp;bg=");
+  background-size: cover;
+  background-position: center; }
+  .image .text {
+    width: 550px;
+    color: #fff;
+    margin-top: 454px; }
+    .image .text p {
+      color: #fff; }
+  .image .flex-container {
+    min-height: 874px;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+/*--======end image======-- */
+/*======reasons======-- */
+.reasons {
+  background-color: #82ca9c; }
+  .reasons .flex-container {
+    min-height: 536px;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .reasons .flex-container p, .reasons .flex-container h2, .reasons .flex-container h5 {
+      color: #fff; }
+    .reasons .flex-container h2 {
+      margin-top: 125px; }
+    .reasons .flex-container .three {
+      margin-right: 31px;
+      flex: 1; }
+    .reasons .flex-container .three.last {
+      flex: 1; }
+
+/*--======end reasons======-- */
+/*--======buy======-- */
+.buy {
+  background-color: #f6f7fa; }
+  .buy .flex-container {
+    min-height: 627px;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .buy .flex-container .buying {
+      flex: 1;
+      height: 380px;
+      margin-top: 103px;
+      padding-left: 63px;
+      padding-right: 94px; }
+      .buy .flex-container .buying h3 {
+        margin-bottom: 0; }
+      .buy .flex-container .buying .icons {
+        color: #c5c5c5;
+        margin-top: 19px; }
+      .buy .flex-container .buying .btn-buy {
+        width: 151px;
+        height: 46px;
+        border-radius: 3px;
+        background-color: #82ca9c;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff; }
+      .buy .flex-container .buying .btn-popular {
+        height: 24px;
+        border-radius: 5px;
+        background-color: #bd8cbf;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 47px; }
+      .buy .flex-container .buying .btn-legacy {
+        width: 77px;
+        height: 24px;
+        border-radius: 5px;
+        background-color: #e1e1e1;
+        font-family: "Open Sans";
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 47px; }
+    .buy .flex-container .buying.white {
+      box-shadow: 0 0 62px rgba(0, 0, 0, 0.05);
+      background-color: #ffffff; }
+
+/*======end buy====== */
+/*======footer====== */
+footer {
+  background-color: #192431; }
+  footer .flex-container {
+    min-height: 608px;
+    margin-top: 0;
+    margin-bottom: 0; }
+    footer .flex-container .row.contact {
+      margin-top: 130px; }
+    footer .flex-container .row.foot {
+      margin-bottom: 157px; }
+    footer .flex-container [class*="in-touch"] {
+      flex: 1; }
+      footer .flex-container [class*="in-touch"] h5,
+      footer .flex-container [class*="in-touch"] p {
+        color: #f6f7fa; }
+    footer .flex-container .resources,
+    footer .flex-container .features,
+    footer .flex-container .how {
+      flex: 1; }
+      footer .flex-container .resources h6,
+      footer .flex-container .features h6,
+      footer .flex-container .how h6 {
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 13px;
+        color: #f6f7fa;
+        margin: 0; }
+      footer .flex-container .resources h5,
+      footer .flex-container .features h5,
+      footer .flex-container .how h5 {
+        color: #f6f7fa; }
+    footer .flex-container .empty {
+      flex: 3; }
+
+/*======end footer====== */
