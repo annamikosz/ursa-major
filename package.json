@@ -1,0 +1,27 @@
+{
+  "name": "kodilla-phone-ambitious",
+  "version": "1.0.0",
+  "description": "Kodilla grunt project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annamikosz/ursa-major.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Anna Mikosz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annamikosz/ursa-major/issues"
+  },
+  "homepage": "https://github.com/annamikosz/ursa-major#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}
