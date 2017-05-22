@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/style.css': 'sass/style.sass'
+          'style.css': 'style.sass'
         }
       }
     },
@@ -14,15 +14,15 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
             expand: true,
-            cwd: 'grafika/',
+            cwd: 'image/',
             src: ['**/*.{png,jpg,gif}'],
-            dest: 'grafika/build/'
+            dest: 'build/'
         }]
       },
     },
     watch: {
       scripts: {
-        files: ['sass/*.sass'],
+        files: ['*.sass'],
         tasks: ['sass'],
         options: {
             spawn: false,
@@ -35,8 +35,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['sass', 'imagemin', 'watch']);
-
+  grunt.registerTask('default', [
+    'watch']);
 
 
 };
