@@ -28,15 +28,28 @@ module.exports = function(grunt) {
             spawn: false,
         },
       } 
+    },
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+              'app/css/*.css',
+              'app/*.html'
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: './app'
+        }
+      }
     }
-
   })
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('default', [
-    'watch']);
+  grunt.registerTask('default', ['browserSync', 'watch']);
 
 
 };
